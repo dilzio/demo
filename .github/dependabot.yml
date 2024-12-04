@@ -14,7 +14,7 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      minorupdates:
+      minorupdates2:
         applies-to: version-updates
         update-types:
         - "minor"
