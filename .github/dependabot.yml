@@ -14,9 +14,15 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      minorupdates2:
+      minorupdates3:
         applies-to: version-updates
         update-types:
+        - "minor"
+        - "patch"
+      majorupdates:
+        applies-to: security-updates
+        update-types:
+        - "major"
         - "minor"
         - "patch"
   - package-ecosystem: bundler
