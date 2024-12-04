@@ -14,12 +14,12 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      minorupdates3:
+      minorupdates4:
         applies-to: version-updates
         update-types:
         - "minor"
         - "patch"
-      majorupdates:
+      majorupdates2:
         applies-to: security-updates
         update-types:
         - "major"
