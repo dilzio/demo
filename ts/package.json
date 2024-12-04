@@ -22,7 +22,7 @@
         "passport-local": "1.0.0",
         "pug": "3.0.2",
         "winston": "3.3.3",
-        "uglify-js": "2.0.0"
+        "uglify-js": "3.19.3"
     },
   "devDependencies": {
     "typescript": "^5.7.2"
