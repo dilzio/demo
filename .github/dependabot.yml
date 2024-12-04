@@ -13,18 +13,27 @@ updates:
     directory: "/ts"
     schedule:
       interval: "weekly"
+    #Note that group ordering matters.  Leave security updates first so that any issues can be highlighted  
     groups:
-      minorupdates4:
-        applies-to: version-updates
-        update-types:
-        - "minor"
-        - "patch"
-      majorupdates2:
+      # Creates distinct PRs for any Security Vulnerability Updates
+      security-updates:
         applies-to: security-updates
         update-types:
         - "major"
         - "minor"
         - "patch"
+      # Creates distinct PRs for major version updates so they can be addressed individually
+      major-version-updates:
+        applies-to: version-updates
+        update-types:
+        - "major"
+      # Creates single PR for minor and patch version updates  
+      minorupdates4:
+        applies-to: version-updates
+        update-types:
+        - "minor"
+        - "patch"
+      
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
