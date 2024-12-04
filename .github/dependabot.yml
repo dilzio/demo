@@ -13,6 +13,12 @@ updates:
     directory: "/ts"
     schedule:
       interval: "weekly"
+    groups:
+      minorupdates:
+        applies-to: version-updates
+        update-types:
+        - "minor"
+        - "patch"
   - package-ecosystem: bundler
     directory: "/ruby"
     schedule:
