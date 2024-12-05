@@ -11,6 +11,9 @@ updates:
       interval: "weekly"
   - package-ecosystem: npm
     directory: "/ts"
+    labels:
+    - "ts"
+    - "ogury-dependabot"
     schedule:
       interval: "weekly"
     #Note that group ordering matters.  Leave security updates first so that any issues can be highlighted  
@@ -23,12 +26,12 @@ updates:
         - "minor"
         - "patch"
       # Creates distinct PRs for major version updates so they can be addressed individually
-      major-version-updates:
+      major-version-updates2:
         applies-to: version-updates
         update-types:
         - "major"
       # Creates single PR for minor and patch version updates  
-      minorupdates4:
+      minorupdates5:
         applies-to: version-updates
         update-types:
         - "minor"
