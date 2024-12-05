@@ -26,12 +26,12 @@ updates:
         - "minor"
         - "patch"
       # Creates distinct PRs for major version updates so they can be addressed individually
-      major-version-updates2:
+      major-version-updates3:
         applies-to: version-updates
         update-types:
         - "major"
       # Creates single PR for minor and patch version updates  
-      minorupdates5:
+      minorupdates6:
         applies-to: version-updates
         update-types:
         - "minor"
