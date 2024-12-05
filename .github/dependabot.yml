@@ -11,6 +11,8 @@ updates:
       interval: "weekly"
   - package-ecosystem: npm
     directory: "/ts"
+    commit-message:
+      prefix: "[ogury-dependabot]
     labels:
     - "ts"
     - "ogury-dependabot"
@@ -26,12 +28,12 @@ updates:
         - "minor"
         - "patch"
       # Creates distinct PRs for major version updates so they can be addressed individually
-      major-version-updates3:
+      major-version-updates4:
         applies-to: version-updates
         update-types:
         - "major"
       # Creates single PR for minor and patch version updates  
-      minorupdates6:
+      minorupdates7:
         applies-to: version-updates
         update-types:
         - "minor"
