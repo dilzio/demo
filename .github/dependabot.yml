@@ -12,7 +12,7 @@ updates:
   - package-ecosystem: npm
     directory: "/ts"
     commit-message:
-      prefix: "[ogury-dependabot]
+      prefix: "[ogury-dependabot]"
     labels:
     - "ts"
     - "ogury-dependabot"
